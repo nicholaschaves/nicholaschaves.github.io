@@ -5,8 +5,12 @@
 <head>
 	
 	<meta charset="utf-8">
-	<title>Encanto Doces</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<title>Mari Moura Doces</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/encanto.css">
 	<link rel="icon" href="imagens/logo.png">
 	
@@ -20,36 +24,44 @@
 <header>
 
 
-	<img src="imagens/logo.png" id="logo">
-	
-	<ul class="menu_navegacao">
-		
-		<li><a href="index.html">Home</a></li>
-		<li><a href="produtos.html">Produtos</a></li>
-		<li><a href="pedidos.html">Pedidos</a></li>
-		<!-- <li><a href="contato.html">Contato</a></li> -->
-		<li><a href="receitas.html">Receitas</a></li>
-	</ul>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a href="index.html" class="navbar-brand" id="brand-modified">Mari Moura <small>Doces</small></a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="#" onclick="emConstrucao()">Receitas</a>
+				</li>
+			</ul>
 
-	<div class="logos">
-	<a href="https://www.instagram.com/encantodocess" target="_blank"><img src="imagens/instagram.png" id="instagram_logo"></a>
-	<a href="https://www.facebook.com/encantodocess" target="_blank"><img src="imagens/facebook.png" id="facebook_logo"></a>
-	<a href="contato.html">Contato</a>
+			<a href="#" class="text-center navbar-image">
+				<img src="imagens/instagram.png" class="image-navbar" alt="instagram">
+			</a>
+
+			<a href="#" class="text-center navbar-image">
+				<img src="imagens/facebook.png" class="image-navbar" alt="facebook">
+			</a>
+
+		</div>
+
+	</nav>
+
+	</header>
+	
+	<div class="container-fluid">
+	
+		<video controls src="imagens/video_encanto.mp4"  id="videoprincipal"></video>
+	
 	</div>
-
 	
-
-</header>
-	
-
-	<video controls src="imagens/video_encanto.mp4" autoplay id="videoprincipal"></video>
-
 	<footer>
 
 		<div class="rodape">
 		<br>
 		<p>Developed by Nicholas Chaves</p>
-		<a href="https://www.instagram.com/nicholaschavesbjj" target="_blank">
+		<a href="https://www.instagram.com/nicholaschaves_" target="_blank">
 		<img src="imagens/rodape_encanto.png" id="profile">
 		</a>
 		<br>
@@ -63,10 +75,10 @@
 
 
 
-
-
-	<script src="jquery/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="bootstrap/js/functions.js"></script>
 
 </body>
 
