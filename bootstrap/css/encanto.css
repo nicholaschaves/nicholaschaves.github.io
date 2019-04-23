@@ -11,6 +11,10 @@ header {
 	font-family: 'fonte_menu', sans-serif;
 }
 
+.navbar {
+	opacity: 0.8 !important;
+}
+
 
 
 nav a {
@@ -32,6 +36,7 @@ nav a {
 .navbar-brand small {
 	color: rgb(243, 123, 123);
 	text-shadow: 1px 1px #000;
+	font-size: 18px;
 }
 
 .navbar-brand:hover {
@@ -45,7 +50,11 @@ nav a:hover {
 }
 
 body {
-	background-color: #d1b3dc;
+	/* background-color: #d1b3dc; */
+	background: url(../../imagens/cupcakes-pattern2.jpg);
+	background-repeat: repeat;
+	margin: 0 auto;	
+	padding: 0;
 }
 
 
@@ -63,20 +72,18 @@ footer {
 	background-color: #ccc;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	color: #fff;
+	padding-bottom: 10px;
+	opacity: 0.9;
+}
+
+footer small {
+	font-weight: 900;
+	opacity: 1.0;
 }
 
 footer img {
 	max-width: 80px;
-}
-
-.rodape {
-	text-align: center;
-	font-weight: bold;
-
-}
-
-#email {
-	color: #000;
+	opacity: 1.0 !important;
 }
 
 footer a:link, a:visited {
@@ -88,81 +95,5 @@ footer a:link, a:visited {
 #videoprincipal {
 	width: 100%;
 	height: 500px;
-}
-
-
-.cardvideo {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    margin-top: 20px;
-}
-
-/* On mouse-over, add a deeper shadow */
-.cardvideo:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.container {
-    padding: 2px 16px;
-    text-align: center;
-    width: 40%;
-}
-
-#receita_a {
-	max-width: 40%;
-	height: auto;
-	display: block;
-	margin: 0 auto;
-}
-
-.cardvideo a:link, a:visited {
-	color: #fff;
-	text-decoration: none;	
-}
-
-.cardvideo a:hover {
-	color: #000;
-	font-weight: bold;
-}
-
-.cardvideo p, h1, h2, h3, h4, h5 {
-	color: #fff;
-}
-
-.container_contato a a:link a:visited {
-		color: #fff;
-	text-decoration: none;	
-}
-
-.container_contato img {
-	width: 5%;
-
-}
-
-.container_contato p {
-	color: #fff;
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
-
-.container_contato {
-    padding: 2px 16px;
-    text-align: center;
-    width: 40%;
-}
-
-.container_contato {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    margin-top: 250px;
-    margin-left: 500px;
-    margin-bottom: 120px;
-
-}
-
-/* On mouse-over, add a deeper shadow */
-.container_contato:hover {
-    box-shadow: 0 8px 16px 0 #fff;
+	margin-bottom: -10px;
 }
