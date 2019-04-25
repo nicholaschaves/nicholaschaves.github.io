@@ -17,7 +17,7 @@ header {
 }
 
 .navbar {
-	background-color: rgb(204, 204, 204, 0.7) !important;
+	background-color: rgb(138, 203, 241, 0.2) !important;
 }
 
 
@@ -29,25 +29,42 @@ nav a {
 	font-size: 40px;
 }
 
-.navbar-brand {
-	font-size: 50px;
+.navbar-brand img {
+	max-width: 100px;
+	margin-left: 1rem;
 }
 
-#brand-modified {
-	color: rgb(243, 164, 164) !important;
-	text-shadow: 1px 1px #000 !important;
+/* transition fade to the page */
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; } 
+	}
+	@-moz-keyframes fadeIn {
+	0% { opacity: 0;}
+	100% { opacity: 1; }
+	}
+	@-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+	}
+	@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
-.navbar-brand small {
-	color: rgb(243, 123, 123);
-	text-shadow: 1px 1px #000;
-	font-size: 18px;
+.fadeIn {
+	-webkit-animation: fadeIn 2s ease-in-out;
+	-moz-animation: fadeIn 2s ease-in-out;
+	-o-animation: fadeIn 2s ease-in-out;
+	animation: fadeIn 2s ease-in-out;
 }
 
-.navbar-brand:hover {
-	text-shadow: none;
-}
+/* */
 
+.navbar-brand img:hover {
+	transform: scale(1.1,1.1);
+}
 nav a:hover {
 	text-shadow: 2px 2px #ccc;
 	text-decoration: none;
@@ -55,9 +72,8 @@ nav a:hover {
 }
 
 body {
-	/* background-color: #d1b3dc; */
-	background: url(../imagens/cupcakes-pattern2.jpg);
-	background-repeat: repeat;
+	/* color of the background brand */
+	background-color: rgb(254, 245, 236);
 }
 
 
@@ -66,13 +82,18 @@ a.navbar-image {
 }
 
 a.navbar-image img {
-    max-width: 30px;
+	max-width: 30px;
+}
+
+a.navbar-image img:hover {
+	transform: scale(1.1,1.1);
 }
 
 footer {
 	width: 100%;
 	max-height: 250px;
-	background-color: rgb(204, 204, 204, 0.7);
+	/* same color as the nav - comes from the gloves of the brand */
+	background-color: rgb(138, 203, 241, 0.2) !important;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	color: #fff;
 	padding-bottom: 10px;
@@ -80,8 +101,7 @@ footer {
 
 footer small {
 	font-weight: 400;
-	color: rgb(243, 164, 164);
-	text-shadow: 1px 1px #000;
+	color: rgb(115, 70, 49);
 }
 
 footer img {
@@ -93,6 +113,24 @@ footer a:link, a:visited {
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	color: #fff;
 	text-decoration: none;
+}
+
+.back-to-top small {
+	color: rgb(115, 70, 49);
+	margin-right: 1rem;
+	font-weight: bold;
+}
+
+.back-to-top small:hover {
+	border-bottom: 2px solid rgb(115, 70, 49);
+}
+
+.back-to-top a {
+	text-decoration: none !important;
+}
+
+.back-to-top a:hover {
+	font-weight: 900;
 }
 
 #videoprincipal {
@@ -107,11 +145,11 @@ footer a:link, a:visited {
 }
 
 .card {
-	background-color: rgb(243, 164, 164) !important;
+	background-color: rgb(239, 206, 187) !important;
 }
 
 .card li {
-	background-color: rgb(243, 123, 123) !important;
+	background-color: rgb(138, 203, 241, 0.6) !important;
 }
 
 .card li a {
@@ -121,7 +159,7 @@ footer a:link, a:visited {
 }
 
 .card li:hover a {
-	color: rgb(243, 123, 123) !important;
+	color: rgb(115, 70, 49) !important;
 }
 
 .card li:hover {
@@ -131,19 +169,21 @@ footer a:link, a:visited {
 
 .card-body h5, p, h4 {
 	color: #fff;
-	text-shadow: 1px 1px #000;
+	text-shadow: 1px 1px rgb(115, 70, 49);
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .card-body h5 {
 	font-family: 'card-title-font', sans-serif;
 	font-size: 50px;
+	color: rgb(115, 70, 49) !important;
 }
 
 .card-body small {
-	color: #fff;
+	color: rgb(115, 70, 49);
 	text-shadow: 1px 1px #000;
-	font-weight: 700;
+	font-weight: 500;
+	letter-spacing: 1px;
 }
 
 .card img {
