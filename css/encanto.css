@@ -146,6 +146,7 @@ footer a:link, a:visited {
 
 .card {
 	background-color: rgb(239, 206, 187) !important;
+	margin-bottom: 1rem;
 }
 
 .card li {
@@ -172,6 +173,13 @@ footer a:link, a:visited {
 	text-shadow: 1px 1px rgb(115, 70, 49);
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.card-body p {
+	text-shadow: 1px 1px #000 !important;
+}
+
+.card-body h4 {
+	font-size: 30px !important;
+}
 
 .card-body h5 {
 	font-family: 'card-title-font', sans-serif;
@@ -190,6 +198,9 @@ footer a:link, a:visited {
 	border: 3px solid #fff;
 }
 
+.text-container {
+	height: 150px;
+}
 .list-group a {
 	font-family: 'card-title-font', sans-serif;
 	font-size: 40px !important;
